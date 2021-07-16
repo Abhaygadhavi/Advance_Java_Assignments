@@ -11,7 +11,7 @@
 <body bgcolor="yellow">
 
 	<%@ include file="header.html" %>
-	<%@ include file="footer.html" %>
+	
 <%
 	HttpSession ss=request.getSession(false);
 	if(ss!=null){ %>
@@ -20,6 +20,8 @@
 	else{%>
 		<h2 style="color:red;">No ,Session here</h2>
 <% 	} %>
+
+	<%@ include file="footer.html" %>
 	
 </body>
 </html>

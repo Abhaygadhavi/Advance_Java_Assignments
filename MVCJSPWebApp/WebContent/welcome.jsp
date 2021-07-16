@@ -11,7 +11,7 @@
 </head>
 <body bgcolor="yellow">
 	<%@ include file="header.html" %>
-	<%@ include file="footer.html" %>
+	
 	
 	<h3>Dear ,<b style="color:green;"> <jsp:getProperty property="username" name="ob"/></b> this is Welcome page</h3>		
 <%
@@ -26,6 +26,8 @@
 %>
 	<p>Session timeout: <%=session.getMaxInactiveInterval() %></p>
 	<p>To enjoy shopping <a href=<%= encode %>>Click here</a></p>
+	
+	<%@ include file="footer.html" %>
 
 </body>
 </html>
