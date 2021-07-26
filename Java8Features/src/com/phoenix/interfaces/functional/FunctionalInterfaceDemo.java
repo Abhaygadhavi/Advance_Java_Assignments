@@ -63,7 +63,7 @@ public class FunctionalInterfaceDemo {
 		Function<Product, String> f8 = product->product.getBrand();
 		System.out.println(f8.apply(pob));
 		
-		BiPredicate<Integer, Double> bp1= (i,d)->i>-d;
+		BiPredicate<Integer, Double> bp1= (i,d)->i>=d;
 		System.out.println(bp1.test(123, 34.0));
 
 		BiConsumer<Integer,String> bc1=(n,s)->System.out.println(n+"\t"+s);

@@ -1,6 +1,7 @@
 package com.phoenix.streams;
 
 import java.util.stream.IntStream;
+import java.util.stream.LongStream;
 
 public class PrimitiveStreamDemo {
 
@@ -17,6 +18,13 @@ public class PrimitiveStreamDemo {
 		System.out.println("using iterator :");
 		IntStream ins2 = IntStream.iterate(1,i->i+2);
 		ins2.limit(10).skip(5).forEach(System.out::println);
+		
+		//
+		System.out.println("stream of long type :");
+		//LongStream ls = LongStream.range(100L, 105L);
+		LongStream ls = LongStream.rangeClosed(100L, 105L);
+		ls.forEach(System.out::println);
+
 
 
 	}

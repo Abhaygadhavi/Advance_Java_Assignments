@@ -33,9 +33,9 @@ public class OptionalDemo {
 		System.out.println(opi.orElse(200));
 		
 		System.out.println(op.orElseGet(()->300));
-		System.out.println(op.orElseGet(()->300));
+		System.out.println(opi.orElseGet(()->300));
 
-		System.out.println(op.orElseThrow(()->new ArithmeticException("No value")));
+		//System.out.println(op.orElseThrow(()->new ArithmeticException("No value")));
 		
 		Optional<Product> opp= Optional.of(new Product(1234, "Speaker", "Boat", 1000));
 		if(opp.isPresent())
